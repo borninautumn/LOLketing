@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton icon_info = findViewById(R.id.icon_info);
+        ImageView icon_info = findViewById(R.id.icon_info);
         icon_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
