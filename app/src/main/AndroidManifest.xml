@@ -12,10 +12,9 @@
         <activity android:name=".GameScheduleActivity"></activity>
         <activity android:name=".SeatGuideActivity" />
         <activity android:name=".LeagueInfoActivity" />
-        <activity android:name=".LeagueInfoActivity" />
         <activity android:name=".JoinActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
