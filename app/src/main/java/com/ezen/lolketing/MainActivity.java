@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),
                         "리그정보 선택됨", Toast.LENGTH_SHORT).show();
                 Intent leagueIntent = new Intent(getApplicationContext(), LeagueInfoActivity.class);
+                leagueIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(leagueIntent);
             }
         });

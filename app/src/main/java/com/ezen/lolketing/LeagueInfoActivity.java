@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -46,6 +47,10 @@ public class LeagueInfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(LeagueInfoActivity.this, "좌석안내 클릭됨", Toast.LENGTH_SHORT).show();
                 Log.e("test1", "좌석안내 선택됨");
+
+                Intent intentSeat = new Intent(getApplicationContext(), SeatGuideActivity.class);
+                intentSeat.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intentSeat);
             }
         });
 
@@ -56,6 +61,10 @@ public class LeagueInfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(LeagueInfoActivity.this, "경기일정 클릭됨", Toast.LENGTH_SHORT).show();
                 Log.e("test2", "경기일정 선택됨");
+
+                Intent intentGame = new Intent(getApplicationContext(), GameScheduleActivity.class);
+                intentGame.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intentGame);
             }
         });
 

@@ -82,6 +82,7 @@ public class JoinActivity extends AppCompatActivity {
                     Toast.makeText(JoinActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
                     // 로그인 화면으로 이동
                     Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(intent);
                 } else {
                     // 회원가입 실패
