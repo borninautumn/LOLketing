@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,7 +28,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titlebar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -60,8 +60,8 @@
 
                 <ImageView
                     android:id="@+id/icon_news"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/icon_news" />
 
                 <TextView
@@ -86,8 +86,8 @@
 
                 <ImageView
                     android:id="@+id/icon_info"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/icon_info" />
 
                 <TextView
@@ -110,8 +110,8 @@
 
                 <ImageView
                     android:id="@+id/icon_reserve"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_reserve" />
 
@@ -135,8 +135,8 @@
 
                 <ImageView
                     android:id="@+id/icon_shop"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/icon_shop_small" />
 
                 <TextView
@@ -161,8 +161,8 @@
 
                 <ImageView
                     android:id="@+id/icon_notice"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/icon_notice" />
 
                 <TextView
@@ -185,8 +185,8 @@
 
                 <ImageView
                     android:id="@+id/icon_event"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/icon_event" />
 
                 <TextView
@@ -201,9 +201,9 @@
                 android:id="@+id/textView10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginEnd="50dp"
+                android:layout_marginEnd="32dp"
                 android:background="#000000"
                 android:gravity="center"
                 android:padding="4dp"
@@ -215,102 +215,102 @@
 
             <ImageView
                 android:id="@+id/teamLogo_t1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/sk_telecom_t1_logo"
+                android:src="@drawable/logo_t1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <ImageView
                 android:id="@+id/teamLogo_sandbox"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
-                android:src="@drawable/sandbox_gaming_logo"
+                android:src="@drawable/logo_sandbox"
                 app:layout_constraintEnd_toStartOf="@+id/teamLogo_kt"
                 app:layout_constraintStart_toEndOf="@+id/teamLogo_t1"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <ImageView
                 android:id="@+id/teamLogo_kt"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="50dp"
-                android:src="@drawable/kt_rolster_logo"
+                android:src="@drawable/logo_kt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <ImageView
                 android:id="@+id/teamLogo_kingzone"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/king_zone_dragon_x_logo"
+                android:src="@drawable/logo_kingzone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_t1" />
 
             <ImageView
                 android:id="@+id/teamLogo_hanwha"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/hanwha_life_esports_logo"
+                android:src="@drawable/logo_hanhwa"
                 app:layout_constraintEnd_toStartOf="@+id/teamLogo_griffin"
                 app:layout_constraintStart_toEndOf="@+id/teamLogo_kingzone"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_sandbox" />
 
             <ImageView
                 android:id="@+id/teamLogo_griffin"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="50dp"
-                android:src="@drawable/griffin_logo"
+                android:src="@drawable/logo_griffin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_kt" />
 
             <ImageView
                 android:id="@+id/teamLogo_geng"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/gen_g_logo"
+                android:src="@drawable/logo_gen_g"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_kingzone" />
 
             <ImageView
                 android:id="@+id/teamLogo_damwon"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/damwon_gaming_logo"
+                android:src="@drawable/logo_damwon"
                 app:layout_constraintEnd_toStartOf="@+id/teamLogo_afreeca"
                 app:layout_constraintStart_toEndOf="@+id/teamLogo_geng"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_hanwha" />
 
             <ImageView
                 android:id="@+id/teamLogo_afreeca"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="50dp"
-                android:src="@drawable/afreeca_freecs_logo"
+                android:src="@drawable/logo_afreeca"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_griffin" />
 
             <ImageView
                 android:id="@+id/teamLogo_apk"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="8dp"
-                android:src="@drawable/apk_logo"
+                android:src="@drawable/logo_apk"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/teamLogo_damwon" />
@@ -319,7 +319,7 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -44,7 +44,7 @@ public class JoinActivity extends AppCompatActivity {
                 doJoin();
             }
         });
-    } //onCreate()
+    } // onCreate()
 
     // 회원가입
     private void doJoin() {
@@ -91,6 +91,6 @@ public class JoinActivity extends AppCompatActivity {
                 }
             }
         });
-    } //doJoin()
+    } // doJoin()
 
-} //class
+} // end class

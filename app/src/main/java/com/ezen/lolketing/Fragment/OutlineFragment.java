@@ -1,7 +1,6 @@
 package com.ezen.lolketing.Fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -62,17 +61,17 @@ public class OutlineFragment extends Fragment {
         });
 
         return rootView;
-    }
+    } // onCreateView()
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         leagueInfoActivity = (LeagueInfoActivity) getActivity();
-    }
+    } // onAttach()
 
     @Override
     public void onDetach() {
         super.onDetach();
     }
 
-}
+} // end class
